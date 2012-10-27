@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Score Service Directory</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+    
+<body>
+        
+<div id="metaListPage" data-role="page">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Game Directory</h1>
+	</div>
+
+	<div data-role="content">
+         <ul id="gameList" data-role="listview" data-filter="true" data-split-icon="star">
+             <li><a href="metadetails.html?idmeta=1">
+                  <img alt="hola" src="img/facebook-login.png"/>
+                      <h4>Prueba meta</h4>
+                      <p>Descripcion Meta</p>
+                      <span class="ui-li-count">12</span></a>
+                 <a href="editmeta.html?idgame=1">Edit</a>
+             </li>
+             <li><a href="metadetails.html?idmeta=1">
+                  <img alt="hola" src="img/facebook-login.png"/>
+                      <h4>Prueba meta 2</h4>
+                      <p>Descripcion Meta 2222222</p>
+                      <span class="ui-li-count">2</span></a>
+                 <a href="editmeta.html?idgame=1">Edit</a>
+             </li>
+         </ul>
+        </div>		
+        <div id="loading" style="display: none"><img alt="loading..." src="./pics/progressbar3.gif" /></div>
+        <div data-role="footer" data-id="toolbar" data-position="persistent">	
+                        <div data-role="navbar">
+                                <ul>
+                                        <li>
+                                                <a href="./add_game.html" data-icon="star" data-transition="fade">
+                                                Crear nuevo proyecto</a>
+                                        </li>	
+                                        <li><a class="ui-btn-active" href="#page2" data-icon="check" data-transition="fade">
+                                                Modificar un proyecto</a>
+                                        </li>	
+                                </ul>
+                        </div>
+        </div><!-- /footer -->	    
+    <div id="result"></div>
+</div>
+
+</body>
+
+</html>
